@@ -153,92 +153,138 @@
 
         @media (max-width: 768px) {
             body {
-                margin: 8px; /* 进一步减小页面边距 */
-                font-size: 14px; /* 优化移动端字体大小 */
-                line-height: 1.5; /* 调整行距 */
-                -webkit-text-size-adjust: 100%; /* 防止iPhone字体自动放大 */
-                -webkit-tap-highlight-color: transparent; /* 移除点击高亮 */
+                margin: 5px;
+                font-size: 15px;
+                line-height: 1.6;
+                -webkit-text-size-adjust: 100%;
+                -webkit-tap-highlight-color: transparent;
             }
             
+            /* 完全重写移动端布局 - 放弃网格布局 */
+            section > ul > li {
+                display: block !important; /* 强制使用块级布局 */
+                margin-bottom: 15px;
+                padding: 10px;
+                background: #f8f9fa;
+                border-radius: 5px;
+                border-left: 4px solid #3498db;
+            }
+
+            section > ul > li .time-block {
+                display: block;
+                font-size: 13px;
+                font-weight: bold;
+                color: #e67e22;
+                margin-bottom: 5px;
+                padding: 3px 8px;
+                background: #fff3cd;
+                border-radius: 3px;
+                width: fit-content;
+                word-break: keep-all;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            /* 确保移动端文字不会溢出 */
+            section > ul > li {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            /* 移动端特殊文本处理 */
+            section > ul > li * {
+                max-width: 100%;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            /* 处理长URL和特殊文本 */
+            section > ul > li strong,
+            section > ul > li span,
+            section > ul > li a {
+                word-break: break-word;
+                overflow-wrap: break-word;
+                hyphens: auto;
+            }
+
+            /* 确保表格和列表在移动端正确显示 */
+            section > ul > li ol,
+            section > ul > li ul {
+                margin-left: 15px;
+                padding-left: 10px;
+            }
+
+            section > ul > li ol li,
+            section > ul > li ul li {
+                margin-bottom: 5px;
+                word-wrap: break-word;
+            }
+
             .prep-list {
-                columns: 1; /* 在小屏幕上变为单栏 */
+                columns: 1;
                 -webkit-columns: 1;
                 -moz-columns: 1;
             }
             
             h1 { 
-                font-size: 1.4em; /* 适当调整标题大小 */
+                font-size: 1.3em;
                 margin-bottom: 15px;
-                padding: 15px 10px;
+                padding: 12px 8px;
+                text-align: center;
             } 
             h2 { 
                 font-size: 1.1em;
-                margin-bottom: 10px;
-                padding: 12px 8px;
+                margin-bottom: 12px;
+                padding: 10px 8px;
             }
-            h3 { font-size: 1em; }
+            h3 { 
+                font-size: 1em;
+                margin-bottom: 8px;
+            }
 
-            /* 优化移动端section间距 */
             section {
-                margin-bottom: 25px;
-                padding: 15px;
+                margin-bottom: 20px;
+                padding: 12px;
                 border-radius: 6px;
             }
 
-            /* 调整手机端时间栏宽度和布局 */
-            section > ul > li {
-                grid-template-columns: 90px 1fr; /* 在手机上，让时间栏更窄 */
-                gap: 0 8px;
-                margin-bottom: 0.8em;
-                font-size: 13px;
-                line-height: 1.4;
-            }
-
-            /* 优化时间块显示 */
-            .time-block {
-                font-size: 12px;
-                font-weight: bold;
-                word-break: keep-all;
-                white-space: nowrap;
-            }
-
-            /* 优化移动端列表 */
             ul {
-                margin-left: 15px;
+                margin-left: 10px;
                 padding-left: 0;
             }
 
             li {
-                margin-bottom: 8px;
+                margin-bottom: 10px;
                 word-wrap: break-word;
                 overflow-wrap: break-word;
-                hyphens: auto;
+                line-height: 1.5;
             }
 
-            /* 优化移动端嵌套列表 */
             ol, ul {
-                margin-top: 8px;
-                margin-bottom: 8px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
 
-            /* 优化移动端note样式 */
             .note {
                 padding: 12px;
                 margin-top: 15px;
-                font-size: 13px;
+                font-size: 14px;
                 border-left-width: 4px;
+                line-height: 1.5;
             }
 
-            /* 优化移动端footer */
             footer {
-                margin-top: 30px;
-                font-size: 0.8em;
+                margin-top: 25px;
+                font-size: 0.85em;
                 padding: 0 10px;
             }
 
-            /* 优化移动端day-header */
             .day-header {
-                padding: 12px 10px;
+                padding: 10px 8px;
                 font-size: 1.1em;
                 line-height: 1.3;
             }
@@ -266,38 +312,49 @@
         /* 超小屏幕优化 (iPhone SE等) */
         @media (max-width: 480px) {
             body {
-                margin: 5px;
-                font-size: 13px;
+                margin: 3px;
+                font-size: 14px;
             }
             
             h1 { 
                 font-size: 1.2em;
-                padding: 12px 8px;
+                padding: 10px 6px;
             }
             
             section {
-                padding: 12px;
-                margin-bottom: 20px;
+                padding: 10px;
+                margin-bottom: 15px;
             }
 
             section > ul > li {
-                grid-template-columns: 80px 1fr;
-                gap: 0 6px;
-                font-size: 12px;
+                margin-bottom: 12px;
+                padding: 8px;
+                font-size: 14px;
             }
 
-            .time-block {
-                font-size: 11px;
+            section > ul > li .time-block {
+                font-size: 12px;
+                padding: 2px 6px;
+                margin-bottom: 4px;
             }
 
             .note {
                 padding: 10px;
-                font-size: 12px;
+                font-size: 13px;
             }
 
             .day-header {
-                padding: 10px 8px;
+                padding: 8px 6px;
                 font-size: 1em;
+            }
+
+            h2 {
+                font-size: 1.05em;
+                padding: 8px 6px;
+            }
+
+            h3 {
+                font-size: 0.95em;
             }
         }
     </style>
