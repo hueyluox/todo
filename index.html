@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oscar的终极日本行程</title>
     <style>
-        body { font-family: 'Microsoft YaHei', Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f9f9f9; color: #333; }
+        body { 
+            font-family: 'Microsoft YaHei', Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 20px; 
+            background-color: #f9f9f9; 
+            color: #333; 
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
         h1, h2, h3 { color: #2c3e50; }
         h1 { text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
         section { margin-bottom: 40px; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         ul { list-style-type: disc; margin-left: 20px; }
+        li {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
         .day-header { background-color: #3498db; color: white; padding: 10px; border-radius: 5px; }
         .time-block { font-weight: bold; color: #e67e22; }
         .commute { font-style: italic; color: #7f8c8d; }
         .note { background-color: #ecf0f1; padding: 10px; border-left: 5px solid #bdc3c7; margin-top: 10px; }
         .prep-list { columns: 2; }
         footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #95a5a6; }
+
+        /* --- 紧凑布局优化 --- */
+        section > ul > li {
+            display: grid; /* 启用网格布局 */
+            grid-template-columns: 120px 1fr; /* 定义两栏：时间栏固定宽度，描述栏自适应 */
+            gap: 0 10px; /* 设置栏间距，无行间距 */
+            margin-bottom: 1em; /* 设置每个时间项之间的垂直距离 */
+        }
+
+        section > ul > li > .time-block {
+            grid-column: 1; /* 确保时间块在第一栏 */
+        }
+        /* --- 结束紧凑布局优化 --- */
+
         @media (max-width: 600px) {
             body {
                 margin: 10px; /* 减小页面边距 */
@@ -28,9 +54,15 @@
             }
             h1 { font-size: 1.5em; } /* 适当调整标题大小 */
             h2 { font-size: 1.2em; }
+
+            /* 调整手机端时间栏宽度 */
+            section > ul > li {
+                grid-template-columns: 100px 1fr; /* 在手机上，让时间栏更窄一些 */
+            }
         }
     </style>
 </head>
+<body>
 <body>
     <header>
         <h1>您的终极日本行程：京都、大阪、熊本冒险之旅</h1>
