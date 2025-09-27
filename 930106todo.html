@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar的终极日本行程</title>
+    <style>
+        body { font-family: 'Microsoft YaHei', Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f9f9f9; color: #333; }
+        h1, h2, h3 { color: #2c3e50; }
+        h1 { text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        section { margin-bottom: 40px; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        ul { list-style-type: disc; margin-left: 20px; }
+        .day-header { background-color: #3498db; color: white; padding: 10px; border-radius: 5px; }
+        .time-block { font-weight: bold; color: #e67e22; }
+        .commute { font-style: italic; color: #7f8c8d; }
+        .note { background-color: #ecf0f1; padding: 10px; border-left: 5px solid #bdc3c7; margin-top: 10px; }
+        .prep-list { columns: 2; }
+        footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #95a5a6; }
+        @media (max-width: 600px) {
+            body {
+                margin: 10px; /* 减小页面边距 */
+                -webkit-text-size-adjust: 100%; /* 防止iPhone字体自动放大 */
+            }
+            .prep-list {
+                columns: 1; /* 在小屏幕上变为单栏 */
+                -webkit-columns: 1;
+                -moz-columns: 1;
+            }
+            h1 { font-size: 1.5em; } /* 适当调整标题大小 */
+            h2 { font-size: 1.2em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>您的终极日本行程：京都、大阪、熊本冒险之旅</h1>
+        <p>欢迎查看您为2025年9月30日至10月6日量身定制的旅行计划。此行程包含精确的时间、交通细节（基于可靠来源如NAVITIME、Rome2Rio和JR网站实时时间表）、住宿和优化建议，以提高效率。您的JR Sanyo-San'in Northern Kyushu Pass覆盖大多数列车，包括新干线路线。我们已考虑延误、人群和休息的缓冲时间。如果天气或确认信息有变，请相应调整。让我们让这次旅行难忘！</p>
+        <p>补充信息：根据搜索，JR Sanyo-San'in Northern Kyushu Pass有效期7天，覆盖关西部分地区、中國地区和北九州，包括新干线（部分线路除Nozomi/Mizuho）。玉名花火大会2025年细节暂无官方更新，但假设基于以往为10月4日晚7点开始。天气预报：京都10月1-3日平均20-25°C，降雨概率30%；大阪10月3-4日类似；熊本10月4-6日22-28°C，可能有阵雨（基于历史平均，实时检查AccuWeather）。</p>
+    </header>
+
+    <section id="preparation">
+        <h2>出发前准备清单</h2>
+        <p>从深圳南山蛇口出发前，确保一切就绪。此清单合并您的输入，以确保顺利开始。</p>
+        <ul class="prep-list">
+            <li>在线QR码入境表格：已完成✅（带笔以防纸质填写）。</li>
+            <li>日本eSIM或便携WiFi：已激活✅，用于数据漫游。</li>
+            <li>现金：60,000日元✅（加卡；如需更多，可兑换）。</li>
+            <li>背包：已购买✅（轻便用于一日游）。</li>
+            <li>纸质签证：每种两份+截图✅。</li>
+            <li>境外保险：已确认✅（覆盖医疗和延误）。</li>
+            <li>护照、港澳通行证、身份证：已打包✅。</li>
+            <li>ICOCA卡（Suica替代）：抵达后充值，用于公交/地铁。</li>
+            <li>一次性内裤、袜子、马桶套：已打包✅。</li>
+            <li>一次性床单：在大阪购买（例如唐吉诃德）。</li>
+            <li>JR Pass兑换券：已准备✅（在福冈机场兑换Sanyo-San'in Northern Kyushu Pass；9/30激活）。</li>
+            <li>200V转100V转换插头：双头已打包。</li>
+            <li>零钱袋：用于放硬币✅。</li>
+            <li>衣服：穿1带2+睡衣。</li>
+            <li>干湿纸巾：已打包。</li>
+            <li>充电宝：3C认证✅（飞行时<100Wh）。</li>
+            <li>酒店确认单：已打印✅。</li>
+            <li>自拍杆+大疆租赁：已准备（必要时在京都租）。</li>
+            <li>布洛芬：用于头痛/时差。</li>
+            <li>耳机、雨伞、小背包、墨镜、手表+手机充电器：全部就绪。</li>
+            <li>额外：防晒霜、口罩、水瓶、零食用于早航班。</li>
+        </ul>
+        <div class="note">提示：下载Hyperdia/NAVITIME app用于实时交通、Google Translate和Japan Rail Pass计算器。提前24小时检查航班状态。</div>
+    </section>
+
+    <section id="day-930">
+        <h2 class="day-header">2025年9月30日（星期二）：从深圳出发 & 抵达京都 – 限时任务与 Gion 之夜 (最终完整版)</h2>
+        <p>主题：融合了详尽的跨境交通与极限优化的抵日任务，通过“分步执行”策略，在不影响核心预约的前提下，完成所有目标的终极行程。</p>
+        <ul>
+            <li><span class="time-block">02:30-03:00：</span>在深圳南山蛇口醒来并准备。</li>
+            <li><span class="time-block">03:00-03:45：</span>从蛇口打车至皇岗口岸（通勤：早高峰前~30-45分钟，低交通；滴滴费用~¥70-100）。4:00前抵达海关。</li>
+            <li><span class="time-block">04:00-04:30：</span>皇岗口岸清关（24/7开放；~15-25分钟处理）。</li>
+            <li><span class="time-block">04:30-05:30：</span>从皇岗乘永东/EE巴士至香港机场T1（时间表：早班~04:30-05:00起，每30分钟；通过app确认；通勤：1小时）。</li>
+            <li><span class="time-block">05:30-08:15：</span>机场值机、安检、早餐（国际航班缓冲2.5小时）。</li>
+            <li><span class="time-block">08:15-12:50：</span>从HKG飞往FUK（福冈；~3h35m；当地时间+1h）。</li>
+            <li><span class="time-block">12:50-13:30：</span>【高效入境】福冈机场：以最快速度完成入境、取行李、过海关，并前往JR柜台兑换并激活JR Pass（总计40分钟）。</li>
+            <li><span class="time-block">13:30-13:50：</span>【极速午餐】在机场便利店或无需排队的快餐店解决午餐（20分钟）。</li>
+            <li><span class="time-block">13:50-14:15：</span>【无缝换乘】乘坐地铁从福冈机场至博多站，并迅速找到新干线站台（25分钟）。</li>
+            <li><span class="time-block">14:15-17:15：</span>【提前抵达】乘坐较早的新干线Sakura号前往京都站（JR Pass覆盖，通勤约3小时）。</li>
+            <li><span class="time-block">17:15-17:50：</span>【光速就位】从京都站乘地铁乌丸线至“四条站”，步行至酒店，用最短时间完成入住，轻装出门，进入任务模式（35分钟）。</li>
+            <li><span class="time-block">17:50-18:40：</span><span style="color: #c0392b; font-weight: bold;">【黄金50分钟：下单任务】</span><br>
+                <ol style="margin-top: 5px; margin-bottom: 5px;">
+                    <li><strong>第一目标 (17:50-18:30):</strong> 抵达大丸百货后，直奔5楼JINS。立即进行验光、挑选镜框、下单。<strong>明确告知店员，您将在未来一两天内再来取货。</strong></li>
+                    <li><strong>第二目标 (18:30-18:40):</strong> 利用下单后的最后10分钟，冲向7楼任天堂或1楼化妆品，完成一项最关键的购物。</li>
+                </ol>
+            </li>
+            <li><span class="time-block">18:40-19:00：</span>【准时赴约】任务结束，从大丸百货出发前往祇园。<strong>最优方式：乘坐阪急电车</strong>，从「乌丸駅」到「京都河原町駅」(1站, 约2分钟)，出站后步行约5-7分钟。此方案可完美规避地面堵车，确保准时。</li>
+            <li><span class="time-block">19:00-20:30：</span>【核心体验】晚餐：弘烤肉（祇园山名庵）（已预约）。</li>
+            <li><span class="time-block">20:30之后：</span><span style="color: #c0392b; font-weight: bold;">【京都之夜：详细探索计划】</span><br>
+                <ul style="margin-top: 5px; margin-bottom: 5px;">
+                  <li><strong>第一阶段 (20:30-21:15): 深入祇园。</strong>从餐厅出发，漫步于华灯初上的【花见小路】，然后前往【八坂神社】进行夜间参拜，欣赏灯火通明的舞殿。</li>
+                  <li><strong>第二阶段 (21:15-22:00): 漫步鸭川。</strong>从八坂神社向西至【四条大桥】，欣赏鸭川两岸的璀璨夜景，感受京都的生活气息。</li>
+                  <li><strong>第三阶段 (22:00之后): 潜入先斗町。</strong>过桥后，进入西侧的狭窄小巷【先斗町】，寻找一家心仪的居酒屋或日式酒吧，小酌一杯，体验京都夜生活的精髓。</li>
+                  <li><strong>返回酒店:</strong> 可从先斗町步行（约15分钟）或在主路搭乘出租车返回。</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="note" style="background-color: #eafaf1; border-left: 5px solid #58d68d;">
+            <h3 style="margin-top: 0;">分步执行计划的关键</h3>
+            <p>
+                此方案的核心是将“配镜”任务分解为两部分：
+                <ul style="margin-top: 5px; margin-bottom: 5px;">
+                    <li><strong>9月30日:</strong> 在50分钟窗口内，完成最耗时的<strong>“验光和下单”</strong>环节。</li>
+                    <li><strong>10月1日或2日:</strong> 在后续行程中，安排一个5-10分钟的空隙，顺路返回大丸百货<strong>“取走眼镜”</strong>即可。</li>
+                </ul>
+                这是唯一能在您坚持的条件下，将所有目标都成功实现的策略。
+            </p>
+        </div>
+
+
+        <section id="day-101">
+            <h2 class="day-header">2025年10月1日（星期三）：京都洛北 – 大原、贵船与河原町之夜 (最终完整版)</h2>
+            <p>主题：本方案融合了极限效率的日间观光与您亲自挑选的特色晚餐。通过上午的精准执行，将傍晚时段完整地投入到京都核心商圈的购物、祈福与美食体验中。</p>
+            <ul>
+                <li><span class="time-block">07:30-08:00：</span>【快速早餐】在酒店附近解决早餐（30分钟）。</li>
+                <li><span class="time-block">08:09-09:10：</span>【精准出发】从「四条乌丸」巴士站（A2乘车处），乘坐**京都巴士17路**（开往大原方向），直达终点站「大原」。<span style="font-style: italic; color: #7f8c8d;">（通勤：约60分钟，票价¥630，使用ICOCA卡最方便）。</span></li>
+                <li><span class="time-block">09:15-10:15：</span><span style="color: #c0392b; font-weight: bold;">【核心游览：60分钟】</span>三千院9点准时开门，请成为第一批游客。专注游览最核心的庭院（有清园）和殿堂，完成打卡后即刻离开。</li>
+                <li><span class="time-block">10:20-10:50：</span>【优化换乘】从「大原」巴士站，乘坐**京都巴士19路**（开往国際会館駅方向），在「国際会館駅前」下车。<span style="font-style: italic; color: #7f8c8d;">（通勤：约30分钟，这是经验证的最佳捷径）。</span></li>
+                <li><span class="time-block">11:00-11:22：</span>【准点衔接】从「国際会館駅」搭乘地铁乌丸线（1站）至「宝ケ池駅」，站内换乘**叡山电铁鞍马线**，前往「贵船口駅」。</li>
+                <li><span class="time-block">11:25-11:30：</span>在「贵船口駅」前无缝换乘**33路接驳巴士**上山至「贵船」。<span style="font-style: italic; color: #7f8c8d;">（此巴士通常会等待电铁乘客，衔接紧密）。</span></li>
+                <li><span class="time-block">11:35-13:00：</span><span style="color: #c0392b; font-weight: bold;">【抢先午餐：京紫陽】</span>在11:35抵达餐厅，成为最早的食客之一，避开排队，从容用餐。</li>
+                <li><span class="time-block">13:00-14:15：</span><span style="color: #c0392b; font-weight: bold;">【速游神社：75分钟】</span>以较快步速完成贵船神社三社的巡礼和水占卜体验：<br>
+                    <ol style="margin-top: 5px; margin-bottom: 5px;">
+                        <li>在本宫进行著名的“水占みくじ”（水占卜）。</li>
+                        <li>沿山路向上，探访以祈求良缘闻名的“结社”。</li>
+                        <li>继续深入，到达最深处、也是最古老的“奥宫”。</li>
+                    </ol>
+                </li>
+                <li><span class="time-block">14:15-15:30：</span>【风景返回】从贵船乘坐33路巴士至贵船口，换乘叡山电铁返回「出町柳駅」。返程时请留意月台信息，有机会坐上两侧都是超大玻璃窗的**“KIRARA”观光列车**。</li>
+                <li><span class="time-block">15:30-16:00：</span><span style="color: #c0392b; font-weight: bold;">【转场：直奔商圈】</span>从「出町柳駅」乘坐**京阪本线**（2站，约5分钟）至「祇園四条駅」。出站后即是京都最繁华的四条河原町区域，无需回酒店，直接开始晚间探索。</li>
+                <li><span class="time-block">16:00-19:30：</span><span style="color: #c0392b; font-weight: bold;">【傍晚：祈福与购物巡礼 (3.5小时)】</span><br>
+                     这是您充裕的黄金时间。所有地点都在步行范围内，建议路线如下：
+                    <ol style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>第一站 (16:00-16:45): 因幡堂 平等寺 (猫猫御守)。</strong><span style="color: #c0392b;">【路线修正】</span>从祇園四条站出发，首先步行约15分钟前往平等寺。<strong>寺庙授与所17:00关闭，这是硬性时间点，必须优先完成。</strong></li>
+                        <li><strong>第二站 (17:00-18:00): 京都高岛屋。</strong>从平等寺步行返回高岛屋，直奔1楼化妆品区完成任务。</li>
+                        <li><strong>第三站 (18:00-18:45): BAL大楼。</strong>从高岛屋步行约5分钟。BAL以其设计感和高端买手店闻名。</li>
+                        <li><strong>第四站 (18:45-19:30): 京都OPA & Onitsuka Tiger。</strong>继续向北探索OPA，寻找**Onitsuka Tiger (鬼塚虎)** 专卖店。</li>
+                    </ol>
+                </li>
+                <li><span class="time-block">19:30-20:00：</span><span style="color: #c0392b; font-weight: bold;">【核心任务：取回眼镜】</span><br>
+                    在晚餐前，从购物区步行至**大丸百货**（同样在附近）。**请务必在20:00前进入**，直奔5楼JINS柜台取回您昨天订制的眼镜。
+                </li>
+                <li><span class="time-block">20:00之后：</span><span style="color: #c0392b; font-weight: bold;">【晚餐及后续：您的精选与备选】</span><br>
+                    完成所有任务后，您可以从以下最值得的选项中，选择您的晚餐和后续活动：
+                    <h4 style="margin-bottom: 5px; margin-top: 10px;">晚餐推荐</h4>
+                    <ol style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>您的首选 (趣味与历史)：壹錢洋食 (Issen Yoshoku)</strong><br>
+                            - **体验：** 就是您提供的地址指向的宝藏店铺！这里是体验京都复古风情、品尝古早味“京风大阪烧”的最佳选择。气氛欢乐，上菜快，是独一-无二的文化体验。
+                            - **位置：** 位于祇园四条路口附近，离您购物区很近。
+                        </li>
+                        <li><strong>备选 (品质与专注)：猪一 (Inoichi) 或 京都胜牛 (Katsugyu)</strong><br>
+                            - **体验：** 如果您突然想吃一碗顶级的拉面或一份高品质的炸牛排，这两家依然是最好的选择，但都需要做好排队的准备。
+                        </li>
+                    </ol>
+                    <h4 style="margin-bottom: 5px; margin-top: 10px;">续摊：深夜探索</h4>
+                     <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>路线① (微醺地图)：</strong>深入**先斗町或木屋町通**，寻找一家心仪的日式酒吧或居酒屋，感受京都夜生活的精髓。</li>
+                        <li><strong>路线② (娱乐与补给)：</strong>前往河原町的**惊安殿堂・唐吉诃德 (Don Quijote)**，这里24小时营业，是您购买药妆、零食和各种新奇商品的最佳去处。</li>
+                        <li><strong>路线③ (甜品巡礼)：</strong>寻找一家仍在营业的“夜パフェ専門店”（夜间芭菲店），用一杯华丽的日式圣代为今天画上甜蜜的句号。</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="note" style="background-color: #fdebd0; border-left: 5px solid #e67e22;">
+                <h3 style="margin-top: 0;">本日终极策略</h3>
+                <p><strong>风险管理：</strong>我们已将有严格关门时间的“因幡堂 平等寺”调整为傍晚的第一个目标，确保您能顺利求取御守，消除了原计划中最大的风险点。</p>
+                <p><strong>美食家的抉择：</strong>您的选择“壹錢洋食”是体验感和效率的完美结合，强烈推荐！如果想换口味，“猪一/胜牛”则是追求极致单品美味的备选。</p>
+                <p><strong>关于伊势丹的最终建议：</strong><br>
+                    - **伊势丹：**位于**京都车站**。强烈建议您在**10月2日（去岚山）**或**10月4日（去大阪）**，利用在京都站乘车的机会顺便逛，无需在今天绕路。
+                </p>
+            </div>
+    </section>
+
+        <section id="day-102">
+            <h2 class="day-header">2025年10月2日（星期四）：京都西线 & 南线 – 岚山深度与伏见稻荷巡礼 (重构版)</h2>
+            <p>主题：本方案根据您的指令进行重大重构。上午采用“出租车先导”策略深度游览岚山；下午则无缝衔接京都南部的伏见稻荷大社，将两大顶级神社完美融合于一日之内。</p>
+            <ul>
+                <li><span class="time-block">08:00-08:30：</span>【准备出发】享用早餐，准备开启高效的一天。</li>
+                <li><span class="time-block">08:30-09:15：</span><span style="color: #c0392b; font-weight: bold;">【出租车直达】</span>从酒店门口直接搭乘出租车，前往最终目的地**「爱宕念佛寺」**。<br>
+                    <span style="font-style: italic; color: #7f8c8d;">- **优势：** 这是您“花钱买体验”的完美策略，能抢在所有公共交通游客之前，获得“包场”般的游览起点。</span>
+                </li>
+                <li><span class="time-block">09:15-12:30：</span><span style="color: #c0392b; font-weight: bold;">【岚山深度路线：下山巡礼 (3.25小时)】</span><br>
+                    由于下午时间充裕，您可以非常从容地享受这条路线：
+                    <ol style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>第一步 (09:15-09:45): 爱宕念佛寺。</strong>静心欣赏1200尊形态各异的罗汉石像。</li>
+                        <li><strong>第二步 (09:45-11:15): 秘境与寺庙。</strong>轻松下山，依次探访**祇王寺**（青苔秘境）、**二尊院**、**常寂光寺**。</li>
+                        <li><strong>第三步 (11:15-11:45): 空灵的竹林。</strong>在最佳时间点穿过**竹林小径**，享受没有拥挤人群的静谧。</li>
+                        <li><strong>第四步 (11:45-12:30): 核心区收尾。</strong>游览世界遗产**天龙寺**的曹源池庭园，最后漫步于**渡月桥**。</li>
+                    </ol>
+                </li>
+                <li><span class="time-block">12:30-13:30：</span><span style="color: #c0392b; font-weight: bold;">【午餐对决：您的精选】</span><br>
+                     时间非常充裕，您可以从容选择：
+                    <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>首选① Kijurou (只能排队):</strong> 12:30这个时间点排队可能刚开始。强烈推荐您点的**和牛牛腰套餐 + 和牛烧肉套餐**，并采纳您的建议“避雷大腿牛排”。</li>
+                        <li><strong>首选④ 鳗の成濑 (预约12:00):</strong> 如果您能将预约调整到12:30，这将是无需等待的最佳选择。</li>
+                    </ul>
+                </li>
+                <li><span class="time-block">13:30-14:30：</span><span style="color: #c0392b; font-weight: bold;">【转场伏见稻荷】</span>从岚山前往伏见稻荷的最优路线：<br>
+                    <ol style="margin-top: 5px; margin-bottom: 5px;">
+                        <li>从**JR嵯峨岚山站**乘坐**JR嵯峨野线**至**「京都駅」**（约17分钟）。</li>
+                        <li>在京都站内，换乘**JR奈良线**（普通车），仅需2站即可抵达**「稲荷駅」**（约5分钟）。</li>
+                    </ol>
+                     <span style="font-style: italic; color: #7f8c8d;">（全程由您的JR Pass完美覆盖，总耗时约1小时，包含换乘步行时间）。</span>
+                </li>
+                <li><span class="time-block">14:30-16:30：</span><span style="color: #c0392b; font-weight: bold;">【午后探索：千本鸟居】</span><br>
+                    游览**伏见稻荷大社**。下午的光线穿过朱红色的鸟居，会形成绝美的光影效果。建议：
+                     <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li>深入体验**千本鸟居**的壮观景象。</li>
+                        <li>走到“奥社奉拜所”购买特色狐狸绘马并祈福。</li>
+                        <li>如果体力允许，可以继续向上挑战“熊鹰社”，感受更宁静的氛围。</li>
+                    </ul>
+                </li>
+                 <li><span class="time-block">16:30-17:00：</span>【返回市中心】从**JR稲荷駅**乘坐JR奈良线返回**「京都駅」**，或从**京阪本线「伏見稲荷駅」**乘坐电车返回**「祇園四条駅」**。</li>
+                <li><span class="time-block">17:00-19:30：</span><span style="color: #c0392b; font-weight: bold;">【计划性休整 & 晚餐准备】</span><br>
+                    返回酒店。这是一个**计划内的、长达2.5小时的战略休整期**，您可以彻底放松，为晚上的高端居酒屋养精蓄锐，并从容地梳洗换装。
+                </li>
+                <li><span class="time-block">19:30-20:00：</span>【出发晚餐】从酒店出发，前往祇园的餐厅。</li>
+                <li><span class="time-block">20:00-21:30：</span>【高端晚餐】前往**神马居酒屋**，享受您预定好的晚餐。</li>
+                <li><span class="time-block">21:30之后：</span><span style="color: #c0392b; font-weight: bold;">【甜点与收尾：方案修正】</span><br>
+                    <strong>重要提示：</strong>您指定的**中村藤吉**京都站店茶室，最后点单时间在21:00左右，您晚餐结束后**绝对无法赶上**。
+                    <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>最佳备选 (Plan B):</strong> 晚餐后，在祇园区域寻找一家仍在营业的顶级抹茶甜品店，如**茶寮都路里（祇園本店）**。它的品质和名气与中村藤吉不相上下，且地理位置完美衔接您的晚餐。</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="note" style="background-color: #fdebd0; border-left: 5px solid #e67e22;">
+                <h3 style="margin-top: 0;">本日行程策略核心</h3>
+                <p><strong>行程重构：</strong>本方案的核心是将原定于明日的“伏见稻荷”移至今日下午，取代了“锦市场”，使得两大神社的游览得以在一天内完成，行程主题更连贯。</p>
+                <p><strong>交通枢纽：</strong>本日所有长途移动都将利用您的JR Pass，以“京都站”为核心进行高效换乘，最大化了通票的价值。</p>
+                <p><strong>战略性休整：</strong>不同于无所事事的“自由时间”，下午的“计划性休整”是确保您能在晚间高端餐饮体验中拥有最佳状态的关键环节，让行程张弛有度。</p>
+            </div>
+        </section>
+    
+        <section id="day-103">
+            <h2 class="day-header">2025年10月3日（星期五）：京都东线 → 大阪转移 (重构优化版)</h2>
+            <p>主题：本方案移除了上午的伏见稻荷行程，让您可以在京都的最后半天，以更从容、更聚焦的姿态，深度体验清水寺的和服与米其林鳗鱼饭，然后轻松转移至大阪。</p>
+            <ul>
+                <li><span class="time-block">前置任务 (10月2日晚)：</span><span style="color: #c0392b; font-weight: bold;">【本日成败的关键】</span>请在京都的酒店前台办理**“宅急便”(Takkyubin) 行李快递服务**，将您的主要行李箱直接寄往大阪的“梅田霍利克酒店”，并指定“次日下午送达”。</span></li>
+                <li><span class="time-block">08:00-08:30：</span>【轻装退房】在京都酒店用完早餐后，仅携带您的一日游小背包，轻松办理退房手续。</li>
+                <li><span class="time-block">08:30-08:45：</span>【准时赴约】从酒店打车或乘坐巴士，准时抵达您预约的**“mocomoco和服店”**（清水寺区域）。</li>
+                <li><span class="time-block">08:45-09:15：</span><span style="color: #c0392b; font-weight: bold;">【变装时刻】</span>挑选心仪的和服并迅速完成换装。</li>
+                <li><span class="time-block">09:15-12:30：</span><span style="color: #c0392b; font-weight: bold;">【和服体验：清水寺 & 参道 (3.25小时)】</span><br>
+                     时间非常充裕，您可以：
+                     <ol style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>第一步 (09:15-10:15): 清水寺。</strong>趁清晨人少，先进入**清水寺**，在著名的清水舞台拍照，并参观音羽瀑布。</li>
+                        <li><strong>第二步 (10:15-12:30): 漫步参道。</strong>从清水寺出来，悠闲地向下漫步，深度探索**二年坂、三年坂**的每一条小巷，逛逛有趣的店铺，品尝路边小吃。</li>
+                    </ol>
+                </li>
+                <li><span class="time-block">12:30-13:30：</span>【米其林午餐】前往您已预约的**“Uokeya U”**鳗鱼饭餐厅享用午餐。</li>
+                <li><span class="time-block">13:30-14:00：</span>【归还和服】午餐后，返回**“mocomoco清水寺店”**归还和服。</li>
+                <li><span class="time-block">14:00-15:00：</span><span style="color: #c0392b; font-weight: bold;">【出发大阪】</span>从最近的**京阪本线「祇園四条駅」**乘坐**特急列车**，前往大阪的**「淀屋橋駅」**。<span style="font-style: italic; color: #7f8c8d;">（通勤：约50分钟，自费）。</span></li>
+                <li><span class="time-block">15:00-15:10：</span>【抵达梅田】从「淀屋橋駅」站内换乘**地铁御堂筋线**，乘坐2站即可抵达**「梅田駅」**。<span style="font-style: italic; color: #7f8c8d;">（通勤：约5分钟，自费）。</span></li>
+                <li><span class="time-block">15:15-15:45：</span>【入住大阪】从梅田站步行至“梅田霍利克酒店”，办理入住。此时，您昨天寄出的行李箱应该已经在房间里等您了。</li>
+                <li><span class="time-block">15:45-17:00：</span>【休整与换装】稍作休息，换上适合都市探索的便装。</li>
+                <li><span class="time-block">17:00-17:30：</span>【探索新世界】从「梅田駅」乘坐**地铁御堂筋线**至「動物園前駅」。出站后，探索充满昭和复古气息的**新世界**区域，并远观**通天阁**。</li>
+                <li><span class="time-block">17:30-19:00：</span>【预约晚餐】前往您已预约的**“一星炭火烧Bistro”**享用晚餐。</li>
+                <li><span class="time-block">19:00-21:00：</span><span style="color: #c0392b; font-weight: bold;">【闪耀的道顿堀】</span>从新世界区域步行或乘坐地铁（1-2站）至**难波/心斋桥**区域。在这里，您可以：<br>
+                    <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li>与**格力高广告牌**合影。</li>
+                        <li>在**道顿堀美食街**品尝章鱼小丸子、大阪烧等地道小吃。</li>
+                        <li>漫步于人潮涌动的**心斋桥筋商店街**，感受大阪的商业活力。</li>
+                    </ul>
+                </li>
+                <li><span class="time-block">21:00之后：</span>【返回酒店】从「心斎橋駅」或「難波駅」乘坐**地铁御堂筋线**返回「梅田駅」。</li>
+            </ul>
+            <div class="note" style="background-color: #fdebd0; border-left: 5px solid #e67e22;">
+                <h3 style="margin-top: 0;">本日行程策略核心</h3>
+                <p><strong>节奏优化：</strong>通过将伏见稻荷移至前一天，本日的行程变得极为从容。您有超过3个小时的时间可以穿着和服，在清水寺最经典的区域深度体验，无需赶场。</p>
+                <p><strong>行李策略是第一生命线：</strong>“宅急便”是让本日所有计划得以实现的基石。它将复杂的“负重拉练”转变为轻松的“城市漫游”。</p>
+                <p><strong>交通优化：</strong>从京都前往大阪，选择从市中心的“乌丸站”乘坐阪急电车直达“梅田”，是点对点最高效的方案，避免了去京都站拖着行李换乘的麻烦。</p>
+            </div>
+        </section>
+
+        <section id="day-104">
+            <h2 class="day-header">2025年10月4日（星期六）：大阪精华 → 熊本花火大会 (行李优化与花火攻略版)</h2>
+            <p>主题：本方案通过重构行李动线，为您在大阪的观光节省宝贵时间。同时，为您制定了详尽的花火大会参与及撤离策略，以应对大规模人潮，确保体验顺畅。</p>
+            <ul>
+                <li><span class="time-block">08:30-09:00：</span>【退房 & 转移基地】从梅田的酒店退房后，立即乘坐**地铁御堂筋线**（1站，约3分钟）前往**「新大阪駅」**。</li>
+                <li><span class="time-block">09:00-09:15：</span><span style="color: #c0392b; font-weight: bold;">【核心策略：寄存行李】</span>在新大阪站内寻找大型储物柜（Coin Locker），将您的主要行李箱寄存。这里是您下午出发的起点，此举将彻底避免回头路。</li>
+                <li><span class="time-block">09:15-10:30：</span>【轻装开逛：黑门市场】从新大阪站再次乘坐**地铁御堂筋线**至「なんば駅」（难波站），步行前往**黑门市场**。在这里尽情品尝烤海鲜、神户牛串、时令水果等。</li>
+                <li><span class="time-block">10:30-12:30：</span>【游览大阪城】从附近的「日本橋駅」乘坐**地铁堺筋线**至「堺筋本町駅」，换乘**中央线**至「谷町四丁目駅」。出站后步行游览**大阪城公园**和天守阁外观。<span style="font-style: italic; color: #7f8c8d;">（时间有限，不建议排队登阁）。</span></li>
+                <li><span class="time-block">12:30-13:00：</span>【返回基地】从「谷町四丁目駅」乘坐**地铁中央线**至「本町駅」，换乘**御堂筋线**返回**「新大阪駅」**。</li>
+                <li><span class="time-block">13:00-13:30：</span>【午餐与准备】在新大阪站取回您的行李。车站内有著名的“駅弁”（车站便当）售卖区，购买一份精美的便当，准备在列车上享用。</li>
+                <li><span class="time-block">13:42-16:47：</span><span style="color: #c0392b; font-weight: bold;">【出发熊本 (方案修正)】</span>乘坐新干线 **Sakura 555号** 前往熊本站。<br>
+                     <span style="font-style: italic; color: #7f8c8d;">- **重要提示：** 您的JR Pass不包含 `Mizuho` 号，`Sakura` 号是您能乘坐的最快选择。</span><br>
+                     <span style="font-style: italic; color: #7f8c8d;">- **通勤：** 约3小时5分钟，JR Pass覆盖。</span>
+                </li>
+                <li><span class="time-block">16:47-17:00：</span>【抵达熊本】抵达熊本站，步行至Dormy Inn酒店。</li>
+                <li><span class="time-block">17:00-17:30：</span>【快速休整】快速办理入住，放下行李，为晚上的花火大会做准备。</li>
+                <li><span class="time-block">17:40-18:00：</span>【前往玉名】从熊本站乘坐**JR鹿儿岛本线**至**「玉名駅」**。<span style="font-style: italic; color: #7f8c8d;">（JR Pass覆盖）。</span></li>
+                <li><span class="time-block">18:00-18:45：</span>【抢占先机】出站后，立即寻找前往会场的**接驳巴士或出租车**。此时人流开始增多，请留出充足的排队和拥堵时间，尽早抵达会场占位。</li>
+                <li><span class="time-block">19:00-21:00：</span>【欣赏花火】欣赏盛大的**玉名花火大会**。</li>
+                <li><span class="time-block">21:00-22:00：</span><span style="color: #c0392b; font-weight: bold;">【花火大会撤离战】</span><br>
+                    这是本日最严峻的挑战。数万人将同时涌向小小的玉名站，返程将极度拥挤。
+                    <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>首选策略 (提前撤离):</strong> 在**20:45**左右，烟花表演进入尾声时，果断动身离开，步行前往车站。这能帮您避开最极端的人潮。</li>
+                        <li><strong>备选策略 (耐心等待):</strong> 如果想看到最后，请做好在车站排队超过1小时的心理准备。确保手机电量充足，ICOCA卡内有余额。</li>
+                    </ul>
+                </li>
+                <li><span class="time-block">22:00之后：</span>【返回酒店】抵达熊本站后，返回酒店。享受**Dormy Inn著名的免费温泉和夜鸣拉面**，洗去一天的疲惫。</li>
+                <li><span class="time-block">深夜备选：</span>如果仍需晚餐，可考虑营业至午夜的**Birdman烧鸟**。</li>
+            </ul>
+            <div class="note" style="background-color: #fdebd0; border-left: 5px solid #e67e22;">
+                <h3 style="margin-top: 0;">本日行程策略核心</h3>
+                <p><strong>行李动线是生命线：</strong>“以新大阪站为基地”是本日行程顺畅的关键。它将复杂的三角移动变为了简单的中心辐射，为您节省了至少1小时的无效通勤时间。</p>
+                <p><strong>花火不是娱乐，是战斗：</strong>请认真对待花火大会的散场环节。这并非危言耸听，日本地方大型节庆的交通拥堵是常态。“提前撤离”是保证您能舒适返回酒店、不影响次日行程的最佳策略。</p>
+                <p><strong>JR Pass规则：</strong>再次强调，您的通票无法乘坐 `Mizuho` 和 `Nozomi` 号新干线。在规划后续行程时请务必注意。</p>
+            </div>
+        </section>
+
+        <section id="day-105">
+            <h2 class="day-header">2025年10月5日（星期日）：熊本精华日 – 阿苏火山“开放世界”攻略 (含究极Plan B)</h2>
+            <p>主题：本方案为您提供本日行程的最大可能性。A计划将阿苏火山之旅的沿途亮点全数呈现；B计划则是一场同样精彩的熊本市内文化与美食深度游。您可以根据实时情况，自由组合，享受最个性化的旅程。</p>
+            <ul>
+                <li><span class="time-block">07:30-08:15：</span>【元气早餐 & 实时决策】在酒店享用早餐，并利用手机查询最新的**“阿苏火山火口规制情报”**。这是决定今日执行A或B计划的唯一依据。</li>
+                
+                <div style="background-color: #eafaf1; border: 1px solid #58d68d; padding: 15px; margin-top: 10px; border-radius: 5px;">
+                <h3 style="margin-top:0; color: #1e8449;">A计划：阿苏火山大环线 (当火山口开放时)</h3>
+                <ul>
+                    <li><span class="time-block">08:25-09:33：</span>【JR丰肥本线之旅】从熊本站乘坐**JR丰肥本线**前往**「阿蘇駅」**。<br>
+                        <ul style="margin-top: 5px; margin-bottom: 5px;">
+                            <li><strong>沿途可选项：</strong>在**「立野駅」(Tateno)**，您可以留意著名的“立野折返式线路”，感受火车Z字形爬升的独特体验。</li>
+                        </ul>
+                    </li>
+                    <li><span class="time-block">09:35-11:15：</span><span style="color: #c0392b; font-weight: bold;">【阿苏火山核心体验】</span><br>
+                        <ol style="margin-top: 5px; margin-bottom: 5px;">
+                            <li><strong>第一步 (09:35-10:05): 登山。</strong>抵达阿苏站后，立即乘坐**产交巴士·阿苏火口线**至**「阿蘇山西駅」**。</li>
+                            <li><strong>第二步 (10:10-10:15): 冲顶。</strong>换乘**“阿苏山循环穿梭巴士”**前往火山口。</li>
+                            <li><strong>第三步 (10:15-11:15): 见证地球心跳。</strong>在**中岳火山口**观景台，近距离观察翠绿色的火山湖与升腾的白色烟雾。这里风大，请准备防风外套。</li>
+                        </ol>
+                    </li>
+                    <li><span class="time-block">11:20-14:30：</span><span style="color: #c0392b; font-weight: bold;">【草千里自由时间 (3小时)】</span><br>
+                        这是您在山上的核心探索区域，拥有极高的自由度：
+                        <ul style="margin-top: 5px; margin-bottom: 5px;">
+                            <li><strong>午餐选择：</strong>
+                                <ul>
+                                    <li><strong>A (景观优先):</strong> 前往**New Kusasenri**的观景餐厅，品尝熊本名物**“赤牛丼”**，窗外就是壮丽的草原与火山。</li>
+                                    <li><strong>B (地道老店):</strong> 返回阿苏站附近的**「いまきん食堂」(Imakin Shokudo)**，这是百年历史的赤牛丼元祖名店，但需要承受超长排队（1-2小时）。（*此选项会严重挤压下午时间，仅建议对美食有极致追求的您*）。</li>
+                                </ul>
+                            </li>
+                            <li><strong>沿途可能性：</strong>
+                                <ul>
+                                    <li><strong>阿苏火山博物馆：</strong>深入了解火山的形成与历史，馆内的实时摄像头能让您看到火山口的清晰影像。</li>
+                                    <li><strong>草千里骑马体验：</strong>在广阔的草原上，体验一次悠闲的骑马。</li>
+                                    <li><strong>轻度徒步：</strong>沿着规划好的步道，登上草千里的小山丘，可以获得俯瞰全景的绝佳视角，并能更清晰地看到**米塚**。</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="time-block">14:41-15:47：</span>【返程】从阿苏站乘坐JR丰肥本线返回熊本站。</li>
+                    <li><span class="time-block">15:47-18:00：</span>【休整时间】返回酒店休息，为晚上的美食盛宴做准备。</li>
+                </ul>
+                </div>
+    
+                <div style="background-color: #fdebd0; border: 1px solid #e67e22; padding: 15px; margin-top: 20px; border-radius: 5px;">
+                <h3 style="margin-top:0; color: #af601a;">B计划：熊本市内武士与庭园之旅 (当火山口关闭或天气恶劣时)</h3>
+                <ul>
+                    <li><span class="time-block">09:00-09:30：</span>【从容出发】乘坐**熊本市电**（有轨电车）前往**「熊本城・市役所前」**站。</li>
+                    <li><span class="time-block">09:30-12:00：</span><span style="color: #c0392b; font-weight: bold;">【熊本城深度游】</span>
+                        <ul style="margin-top: 5px; margin-bottom: 5px;">
+                            <li><strong>必体验：</strong>登上完全修复的**天守阁**，并参观城下的**“樱之马场 城彩苑”**。</li>
+                            <li><strong>沿途可能性：</strong>在城彩苑，可以品尝独特的“海胆可乐饼”或“いきなり団子”（熊本特色红薯团子）。附近还有**熊本县传统工艺馆**，可以欣赏本地的“肥后象嵌”等精美工艺品。</li>
+                        </ul>
+                    </li>
+                    <li><span class="time-block">12:00-13:30：</span>【午餐：上通/下通探索】步行至**上通・下通商店街**。
+                         <ul style="margin-top: 5px; margin-bottom: 5px;">
+                            <li><strong>午餐选择：</strong>
+                                <ul>
+                                    <li><strong>A (本地特色):</strong> 寻找一家老店品尝**“太平燕”**（什锦粉丝汤），推荐**「紅蘭亭」**。</li>
+                                    <li><strong>B (拉面王者):</strong> 前往大名鼎鼎的**“黑亭”**或本地人推崇的**“天外天”**，品尝一碗地道的熊本豚骨拉面。</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="time-block">13:30-16:00：</span><span style="color: #c0392b; font-weight: bold;">【午后文化之旅】</span>
+                        <ul style="margin-top: 5px; margin-bottom: 5px;">
+                            <li><strong>主线任务：</strong>乘坐市电前往**水前寺成趣园**，欣赏精致的日式庭园。</li>
+                            <li><strong>沿途可能性：</strong>在前往水前寺的路上，可以在「通町筋」站下车，逛逛**鹤屋百货**，或参观旁边的**熊本市现代美术馆**。</li>
+                        </ul>
+                    </li>
+                    <li><span class="time-block">16:00之后：</span>【返回酒店】返回酒店休息，或在市中心继续购物。</li>
+                </ul>
+                </div>
+    
+                <li style="margin-top: 20px;"><span class="time-block">18:00-19:30：</span><span style="color: #c0392b; font-weight: bold;">【晚餐盛宴：胜烈亭炸猪排】</span><br>
+                    前往您已预约的**「胜烈亭」新市街本店**。
+                    <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>必点菜单：</strong>「厚揚六白黒豚ロースかつ膳」（厚切鹿儿岛六白黑豚里脊套餐）。</li>
+                        <li><strong>用餐体验：</strong>自己动手研磨芝麻，并搭配店家特制的西洋酱和和风酱，享受不同风味。</li>
+                    </ul>
+                </li>
+                <li><span class="time-block">19:30之后：</span><span style="color: #c0392b; font-weight: bold;">【熊本之夜：探索可能性】</span><br>
+                    晚餐后，您正身处熊本最热闹的区域，可以：
+                    <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>路线① (微醺地图):</strong> 在新市街或下通商店街的巷弄里，寻找一家本地的**烧酒Bar**，品尝熊本特产的米烧酒“球磨烧酎”。</li>
+                        <li><strong>路线② (购物补给):</strong> 前往24小时营业的**惊安殿堂・唐吉诃德**（下通店），进行最后的购物补给。</li>
+                        <li><strong>路线③ (文化体验):</strong> 如果您对书籍和设计感兴趣，可以去逛逛位于鹤屋百货内的**蔦屋書店 (Tsutaya Books)**。</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="note" style="background-color: #f2f3f4; border-left: 5px solid #808b96;">
+                <h3 style="margin-top: 0;">本日行程策略核心</h3>
+                <p><strong>选择的自由：</strong>本方案的核心是为您提供“菜单式”的选择。无论是在阿苏的草原，还是在熊本的街头，您都可以根据“沿途可能性”板块，随时增加或调整您的行程，实现真正的个性化探索。</p>
+                <p><strong>风险与决策：</strong>请在早上8:15前，根据官方发布的火山信息，果断决定执行A或B计划。两个计划都同样精彩，无需遗憾。</p>
+                <p><strong>交通提示 (A计划)：</strong>阿苏山区的巴士班次稀少，请务必以巴士的时刻表为准绳来规划您的自由活动时间，避免错过末班车。</p>
+            </div>
+        </section>
+
+        <section id="day-106">
+            <h2 class="day-header">2025年10月6日（星期一）：告别熊本 – 返回航班 (机场购物攻略版)</h2>
+            <p>主题：本方案将为您在熊本的最后时光提供轻松且有意义的选择，并为您制定一份详尽的福冈机场购物作战计划，确保您从容离境，满载而归。</p>
+            <ul>
+                <li><span class="time-block">08:00-09:30：</span>【最后的熊本时光：二选一】<br>
+                    <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>选项A (文化追忆):</strong> 再次前往**熊本城**下的**“樱之马场 城彩苑”**。清晨的这里非常安静，您可以从容购买“いきなり団子”等特色点心作为伴手礼，或是在涌々座回顾熊本的历史。</li>
+                        <li><strong>选项B (彻底放松):</strong> 享受Dormy Inn酒店著名的丰盛早餐，然后泡一次晨间温泉，彻底放松身心，为长途旅行做准备。</li>
+                    </ul>
+                </li>
+                <li><span class="time-block">09:30-10:30：</span>【告别早午餐：Plan B推荐】<br>
+                    考虑到您昨晚已品尝过胜烈亭，建议您尝试不同的熊本风味。
+                     <ul style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>首选推荐：黑亭拉面 (本店)。</strong>距离熊本站不远，是体验地道熊本焦蒜油豚骨拉面的最佳选择。</li>
+                        <li><strong>如果仍想吃炸猪排：</strong>请注意，**胜烈亭新市街本店11:00才开门**，您10:00的计划无法实现。建议直接在熊本站内的餐厅用餐。</li>
+                    </ul>
+                </li>
+                <li><span class="time-block">10:57-11:35：</span><span style="color: #c03_92b; font-weight: bold;">【搭乘新干线】</span>从熊本站乘坐新干线 **Sakura 548号** 前往**「博多駅」**。<span style="font-style: italic; color: #7f8c8d;">（通勤：38分钟，这是您JR Pass的最后一段完美旅程）。</span></li>
+                <li><span class="time-block">11:35-11:50：</span>【抵达福冈 & 站内转乘】抵达博多站后，跟随指示牌前往**地铁空港线**，乘坐开往「福岡空港」的地铁。<span style="font-style: italic; color: #7f8c8d;">（通勤：仅2站，约5分钟，自费）。</span></li>
+                
+                <li><span class="time-block">12:00-14:00：</span><span style="color: #c0392b; font-weight: bold;">【福冈机场终极攻略 (2小时)】</span><br>
+                    您的航班是14:00起飞，我们将时间分为三个阶段：
+                    <ol style="margin-top: 5px; margin-bottom: 5px;">
+                        <li><strong>第一阶段 (12:00-12:45): 办理值机 & 采购伴手礼。</strong>
+                            <ul>
+                               <li>抵达机场后，**先不要过安检**。立即前往您的航空公司柜台办理登机手续和托运行李。</li>
+                               <li>随后，在国际航站楼的出发大厅，或乘坐免费接驳巴士前往**国内航站楼**（那里有更丰富的伴手礼店），购买食品类伴手礼（如“博多通りもん”点心、明太子、拉面等）。</li>
+                            </ul>
+                        </li>
+                        <li><strong>第二阶段 (12:45-13:30): 安检 & 免税购物。</strong>
+                            <ul>
+                                <li>通过安检和海关后，进入免税店区域。这是您购买**化妆品、烟酒、奢侈品**的黄金时间。</li>
+                                <li>福冈机场的免税店品牌齐全，包括CPB, The Ginza, SK-II等热门品牌，以及白色恋人、ROYCE'生巧等日本经典零食。</li>
+                            </ul>
+                        </li>
+                        <li><strong>第三阶段 (13:30-14:00): 最后准备。</strong>
+                            <ul>
+                                <li>完成购物后，在登机口附近休息、整理手提行李。如果需要，可以在登机口旁的便利店购买最后一瓶饮料或零食。</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li><span class="time-block">14:00：</span>【起飞】从FUK搭乘航班返回HKG，结束完美的旅程。</li>
+            </ul>
+            <div class="note" style="background-color: #f2f3f4; border-left: 5px solid #808b96;">
+                <h3 style="margin-top: 0;">本日行程策略核心</h3>
+                <p><strong>告别餐的仪式感：</strong>建议您尝试熊本的另一面，比如一碗地道的熊本拉面，让您的美食记忆更加丰富。请务必注意餐厅的开门时间。</p>
+                <p><strong>机场购物的艺术：</strong>福冈机场的购物精华在于“先外后内”——即先在公共区域（尤其国内航站楼）买齐食品伴手礼，再进入免税区专注购买美妆和奢侈品。请严格遵循攻略中的时间分配。</p>
+                <p><strong>JR Pass的谢幕：</strong>从熊本到博多的新干线是您7日券的最后一次使用。之后的所有交通（如福冈地铁）都需要自费，请确保ICOCA卡内有足够余额。</p>
+            </div>
+        </section>
+</body>
+</html>
